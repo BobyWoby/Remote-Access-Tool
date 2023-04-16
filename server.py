@@ -5,7 +5,7 @@ s = socket.socket()
 # hostname: LAPTOP-O8V292V7
 host = socket.gethostname()
 # host = "192.168.174.189"
-host = ""
+host = "192.168.50.100"
 port = 8080
 s.bind((host,port))
 print(" Server is currently running at ", host)

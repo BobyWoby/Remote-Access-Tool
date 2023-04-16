@@ -6,7 +6,7 @@ port = 8080
 # host = input(str("Please enter the server address: "))
 # host = "192.168.174.189"
 # 192.168.56.1
-host = "10.70.10.134"
+host = "192.168.50.100"
 s.connect((host, port))
 # print("Connected to the server successfully")
 
