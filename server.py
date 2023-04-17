@@ -1,10 +1,9 @@
 import os
 import socket
 
+#socket setup
 s = socket.socket()
-# hostname: LAPTOP-O8V292V7
 host = socket.gethostname()
-# host = "192.168.174.189"
 host = "192.168.50.100"
 port = 8080
 s.bind((host,port))
@@ -14,6 +13,7 @@ s.listen()
 conn, addr = s.accept()
 print(addr, " has connected to the server successfully ")
 
+#Shell commands
 while True:
     command = input(str("Command >> "))
     conn.send(command.encode())
